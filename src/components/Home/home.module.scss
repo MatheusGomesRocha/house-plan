@@ -1,14 +1,94 @@
 .container {
     background-color: var(--brown);
-    height: 60vh;
-    width: 100%;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        height: 4rem;
+        width: 100%;
+
+        h2 {
+            color: var(--white);
+            text-align: center;
+            font-size: 1.5rem;
+            margin-left: 15%;
+        }
+
+        .actionIcons {
+            margin-right: 15%;
+        }
+    }
+
+    .content {
+        width: 40%;
+        margin-left: 15%;
+
+        h1 {
+            color: var(--white);
+            text-transform: capitalize;
+            line-height: 3rem;
+            width: 70%;
+        }
+
+        p {
+            color: var(--gray-200);
+            font-weight: 100;
+            width: 70%;
+            margin-top: 1rem;
+        }
+
+        .buttonRow {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+
+            div {       // Styles para os dois buttons
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 250ms;
+                height: 3rem;
+                width: 10rem;
+
+                span {
+                    color: var(--white);
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                }
+            }
+
+            .buttonBuy {
+                background-color: var(--brown-100);
+                border: 1px solid var(--brown-100);
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+
+            .buttonExplore {
+                border: 1px solid var(--brown-100);
+                margin-left: 1rem;
+
+                &:hover {
+                    background-color: var(--brown-100);
+                }
+            }
+        }
+    }
 
     img {
         width: 40rem;
         height: 30rem;
+        margin-right: 15%;
     }
 }
 
